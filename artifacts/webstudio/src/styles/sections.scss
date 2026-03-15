@@ -293,15 +293,22 @@
   counter-reset: step;
   position: relative;
 
-  // Connecting line
+  // Connecting line — runs between the four number circles
   &::before {
     content: '';
     position: absolute;
-    top: 1.5rem;
-    left: 12%;
-    right: 12%;
-    height: 1px;
-    background: var(--color-border);
+    top: calc(1.5rem - 1px); // sit on the horizontal centre of the 48px circles
+    left: calc(12.5% + 24px);  // start at right edge of circle 01
+    right: calc(12.5% + 24px); // end at left edge of circle 04
+    height: 2px;
+    background: linear-gradient(
+      to right,
+      var(--color-primary) 0%,
+      var(--color-primary-light) 50%,
+      var(--color-primary) 100%
+    );
+    opacity: 0.35;
+    border-radius: 1px;
 
     @media (max-width: 768px) { display: none; }
   }
@@ -334,6 +341,7 @@
   flex-shrink: 0;
   position: relative;
   z-index: 1;
+  box-shadow: 0 0 0 4px var(--color-white), 0 0 0 6px rgba(42, 172, 172, 0.25);
 }
 
 .process__step-title {
@@ -376,6 +384,18 @@
     );
 
     @media (max-width: 768px) { display: none; }
+
+    // Wider screens — shift toward centre, reduce weight
+    @media (min-width: 1280px) {
+      left: 8%;
+      opacity: 0.45;
+      mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0.7) 20%,
+        rgba(0,0,0,0.4) 50%,
+        transparent 78%
+      );
+    }
   }
 
   // Container sits above the image
