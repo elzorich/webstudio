@@ -1,4 +1,4 @@
-# PixelCare Studio — Web Studio Landing Page
+# EZ Web-Studio — Web Studio Landing Page
 
 A clean, modern, SEO-friendly landing page for a web studio that specialises in websites for **healthcare, wellness, and beauty businesses**.
 
@@ -151,7 +151,7 @@ Open `src/styles/base.scss` and update the CSS custom properties at the top:
 
 ### 2. Change the studio name and content
 
-Edit `index.html` directly. Search for `PixelCare Studio` and replace with the client's name. Update all section text, contact details, and meta tags.
+Edit `index.html` directly. Search for `EZ Web-Studio` and replace with the client's name. Update all section text, contact details, and meta tags.
 
 ### 3. Add real images
 
