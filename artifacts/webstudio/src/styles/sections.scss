@@ -42,13 +42,12 @@
   mix-blend-mode: multiply;
   opacity: 1;
   display: block;
-  // Keep image transparent over the text zone, fade in towards center
+  // Fade in quickly — image visible from ~15% onward
   mask-image: linear-gradient(
     to right,
     transparent 0%,
-    transparent 30%,
-    rgba(0,0,0,0.5) 50%,
-    black 68%
+    rgba(0,0,0,0.6) 20%,
+    black 42%
   );
 }
 
