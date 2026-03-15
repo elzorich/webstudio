@@ -323,8 +323,8 @@
 
 .process__steps {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-8);
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-6);
   counter-reset: step;
   position: relative;
 
@@ -333,16 +333,17 @@
     content: '';
     position: absolute;
     top: 1.5rem;
-    left: 12%;
-    right: 12%;
+    left: 8%;
+    right: 8%;
     height: 1px;
     background: var(--color-border);
 
     @media (max-width: 768px) { display: none; }
   }
 
-  @media (max-width: 900px) { grid-template-columns: 1fr 1fr; }
-  @media (max-width: 560px) { grid-template-columns: 1fr; }
+  @media (max-width: 1024px) { grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 640px)  { grid-template-columns: 1fr 1fr; }
+  @media (max-width: 400px)  { grid-template-columns: 1fr; }
 }
 
 .process__step {
