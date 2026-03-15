@@ -409,6 +409,7 @@
   &__content {
     width: 50%;
     @media (max-width: 768px) { width: 100%; }
+    @media (min-width: 1280px) { width: 58%; }
   }
 
   &__text {
