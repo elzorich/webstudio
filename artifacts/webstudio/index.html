@@ -64,29 +64,94 @@
             </div>
           </div>
           <div class="hero__visual" aria-hidden="true">
-            <div class="hero__mockup">
-              <div class="mockup-browser">
-                <div class="mockup-browser__bar">
-                  <span class="dot dot--red"></span>
-                  <span class="dot dot--yellow"></span>
-                  <span class="dot dot--green"></span>
-                  <span class="mockup-browser__url">yourpractice.com</span>
-                </div>
-                <div class="mockup-browser__screen">
-                  <div class="mockup-screen-nav"></div>
-                  <div class="mockup-screen-hero">
-                    <div class="mockup-screen-line mockup-screen-line--wide"></div>
-                    <div class="mockup-screen-line mockup-screen-line--narrow"></div>
-                    <div class="mockup-screen-btn"></div>
-                  </div>
-                  <div class="mockup-screen-cards">
-                    <div class="mockup-screen-card"></div>
-                    <div class="mockup-screen-card"></div>
-                    <div class="mockup-screen-card"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <svg class="hero__svg" viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <defs>
+                <radialGradient id="divineGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%"   stop-color="#c4957a" stop-opacity="0.9"/>
+                  <stop offset="45%"  stop-color="#c4957a" stop-opacity="0.3"/>
+                  <stop offset="100%" stop-color="#c4957a" stop-opacity="0"/>
+                </radialGradient>
+                <radialGradient id="heroGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%"   stop-color="#2aacac" stop-opacity="0.06"/>
+                  <stop offset="100%" stop-color="#2aacac" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <!-- Ambient glow behind the hands -->
+              <circle cx="280" cy="210" r="200" fill="url(#heroGlow)"/>
+
+              <!-- Concentric decorative rings -->
+              <circle cx="280" cy="210" r="192" stroke="#2aacac" stroke-width="1"    opacity="0.09"/>
+              <circle cx="280" cy="210" r="148" stroke="#2aacac" stroke-width="0.75" opacity="0.06"/>
+              <circle cx="280" cy="210" r="98"  stroke="#2aacac" stroke-width="0.5"  opacity="0.04"/>
+
+              <!-- Floating accent circles -->
+              <circle cx="68"  cy="72"  r="20" stroke="#2aacac" stroke-width="1"    opacity="0.13"/>
+              <circle cx="492" cy="88"  r="13" stroke="#c4957a" stroke-width="1"    opacity="0.18"/>
+              <circle cx="510" cy="350" r="26" stroke="#2aacac" stroke-width="1"    opacity="0.11"/>
+              <circle cx="44"  cy="358" r="15" stroke="#c4957a" stroke-width="1"    opacity="0.13"/>
+              <circle cx="428" cy="32"  r="7"  stroke="#2aacac" stroke-width="0.75" opacity="0.15"/>
+              <circle cx="125" cy="388" r="9"  stroke="#c4957a" stroke-width="0.75" opacity="0.12"/>
+
+              <!-- Scattered dots -->
+              <circle cx="52"  cy="148" r="2.5" fill="#2aacac" opacity="0.20"/>
+              <circle cx="128" cy="50"  r="2"   fill="#c4957a" opacity="0.25"/>
+              <circle cx="436" cy="46"  r="3"   fill="#2aacac" opacity="0.18"/>
+              <circle cx="514" cy="162" r="2"   fill="#c4957a" opacity="0.25"/>
+              <circle cx="524" cy="294" r="2.5" fill="#2aacac" opacity="0.18"/>
+              <circle cx="36"  cy="276" r="3"   fill="#2aacac" opacity="0.18"/>
+              <circle cx="358" cy="398" r="2"   fill="#2aacac" opacity="0.15"/>
+              <circle cx="158" cy="378" r="2.5" fill="#c4957a" opacity="0.12"/>
+              <circle cx="485" cy="200" r="2"   fill="#2aacac" opacity="0.15"/>
+              <circle cx="75"  cy="220" r="2"   fill="#c4957a" opacity="0.15"/>
+
+              <!-- Fine rule marks -->
+              <line x1="76"  y1="120" x2="118" y2="120" stroke="#2aacac" stroke-width="0.75" opacity="0.18"/>
+              <line x1="76"  y1="124" x2="110" y2="124" stroke="#2aacac" stroke-width="0.5"  opacity="0.12"/>
+              <line x1="442" y1="316" x2="484" y2="316" stroke="#2aacac" stroke-width="0.75" opacity="0.18"/>
+              <line x1="450" y1="320" x2="484" y2="320" stroke="#2aacac" stroke-width="0.5"  opacity="0.12"/>
+
+              <!-- ══ GOD'S HAND — upper right, pointing left ══ -->
+              <!-- Forearm -->
+              <polygon points="560,128 395,146 395,218 560,198" fill="#2aacac" opacity="0.82"/>
+              <!-- Index finger (tapers to a point at left) -->
+              <path d="M 395,169 L 287,187 C 282,188 279,191 279,195 C 279,199 282,202 287,202 L 395,198 Z" fill="#2aacac" opacity="0.90"/>
+              <!-- Thumb (above the palm junction) -->
+              <ellipse cx="390" cy="136" rx="17" ry="10" transform="rotate(-28,390,136)" fill="#2aacac" opacity="0.82"/>
+              <!-- Middle / ring / pinky (below index) -->
+              <ellipse cx="386" cy="224" rx="19" ry="8"  transform="rotate(-12,386,224)" fill="#2aacac" opacity="0.76"/>
+              <ellipse cx="380" cy="237" rx="16" ry="7"  transform="rotate(-12,380,237)" fill="#2aacac" opacity="0.70"/>
+              <ellipse cx="374" cy="248" rx="13" ry="6"  transform="rotate(-12,374,248)" fill="#2aacac" opacity="0.64"/>
+
+              <!-- ══ ADAM'S HAND — lower left, pointing right ══ -->
+              <!-- Forearm -->
+              <polygon points="0,240 165,218 165,255 0,300" fill="#1c8484" opacity="0.74"/>
+              <!-- Index finger (tapers to a point at right) -->
+              <path d="M 165,240 L 268,216 C 272,215 275,212 275,209 C 275,206 272,204 268,203 L 165,220 Z" fill="#1c8484" opacity="0.82"/>
+              <!-- Thumb (below the palm junction) -->
+              <ellipse cx="167" cy="264" rx="17" ry="9"  transform="rotate(32,167,264)"  fill="#1c8484" opacity="0.74"/>
+              <!-- Middle / ring / pinky (above index) -->
+              <ellipse cx="175" cy="211" rx="16" ry="7"  transform="rotate(18,175,211)"  fill="#1c8484" opacity="0.68"/>
+              <ellipse cx="178" cy="198" rx="14" ry="6"  transform="rotate(18,178,198)"  fill="#1c8484" opacity="0.62"/>
+              <ellipse cx="180" cy="186" rx="11" ry="5"  transform="rotate(18,180,186)"  fill="#1c8484" opacity="0.56"/>
+
+              <!-- ══ DIVINE SPARK — the gap between fingertips ══ -->
+              <!-- Glowing aura -->
+              <circle cx="277" cy="202" r="30" fill="url(#divineGlow)"/>
+              <!-- Core spark dot -->
+              <circle cx="277" cy="202" r="5" fill="#c4957a" opacity="0.95"/>
+              <!-- Radiating marks -->
+              <g stroke="#c4957a" stroke-width="1.5" stroke-linecap="round" opacity="0.42">
+                <line x1="277" y1="188" x2="277" y2="183"/>
+                <line x1="277" y1="216" x2="277" y2="221"/>
+                <line x1="263" y1="202" x2="258" y2="202"/>
+                <line x1="291" y1="202" x2="296" y2="202"/>
+                <line x1="267" y1="192" x2="263" y2="188"/>
+                <line x1="287" y1="212" x2="291" y2="216"/>
+                <line x1="287" y1="192" x2="291" y2="188"/>
+                <line x1="267" y1="212" x2="263" y2="216"/>
+              </g>
+            </svg>
           </div>
         </div>
       </section>
