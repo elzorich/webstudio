@@ -1,0 +1,103 @@
+I want to build a landing page for a small web studio using this GitHub repository as the main project source:
+
+https://github.com/elzorich/webstudio
+
+Important requirements:
+
+1. GitHub workflow
+This project must remain a normal GitHub-based project.
+I want to be able to edit the code locally in my IDE (for example VS Code) and push changes through Git.
+
+Replit should act mainly as an AI-assisted development environment and live preview, but the project must NOT depend on Replit-specific tools or deployment features.
+
+2. Tech stack
+Use a simple static website architecture:
+
+- HTML
+- SCSS / CSS
+- small amount of vanilla JavaScript if needed
+
+Do NOT use React, Next.js or other heavy frameworks.
+
+This is a marketing landing page, not a web application.
+
+3. Styling framework
+Use a lightweight, responsive UI library to speed up development.
+
+Suggested options:
+- Bootstrap 5
+or
+- Material Design (Materialize or similar)
+
+The layout must be mobile-first and responsive.
+
+Use CSS variables for colors and spacing so styles can easily be customized later for client projects.
+
+4. SEO and performance
+The landing page should follow SEO and performance best practices:
+
+- semantic HTML structure
+- proper heading hierarchy
+- meta tags
+- optimized images
+- fast loading
+- mobile-friendly layout
+- accessible color contrast
+
+5. Business focus
+This web studio will create websites and landing pages primarily for small and medium businesses in:
+
+- healthcare
+- wellness
+- beauty
+- physiotherapy
+- preventive medicine
+- local service businesses
+
+The design style should feel:
+
+- clean
+- modern
+- trustworthy
+- elegant
+- suitable for healthcare and beauty brands
+
+6. Suggested project structure
+
+/src
+  /styles
+    base.scss
+    layout.scss
+    components.scss
+    sections.scss
+  /js
+    main.js
+  /assets
+    images
+    icons
+
+index.html
+
+7. Landing page sections
+
+Create a landing page structure with these sections:
+
+- Header / navigation
+- Hero section with clear value proposition
+- Services (website design, development, SEO)
+- Portfolio / example projects
+- Process (how we work)
+- About the studio
+- Contact / call to action
+- Footer
+
+8. Reusability
+The code should be clean and modular because this landing page will become a base template for client websites.
+
+Structure the page in reusable sections so it can later be integrated into MODX CMS templates and chunks.
+
+9. Development environment
+Add a simple development setup so the site can run and preview easily in Replit and also locally.
+
+Goal:
+Create a clean, modern, SEO-friendly and mobile-first landing page foundation for a web studio website that works both in Replit and in a normal GitHub + local IDE workflow.
