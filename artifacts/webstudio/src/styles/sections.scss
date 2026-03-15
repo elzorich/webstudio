@@ -385,15 +385,14 @@
 
     @media (max-width: 768px) { display: none; }
 
-    // Wider screens — shift toward centre, reduce weight
+    // Wider screens — shift toward centre, subtle right fade only
     @media (min-width: 1280px) {
       left: 8%;
-      opacity: 0.7;
+      opacity: 1;
       mask-image: linear-gradient(
         to right,
-        rgba(0,0,0,0.7) 20%,
-        rgba(0,0,0,0.4) 50%,
-        transparent 78%
+        black 60%,
+        transparent 85%
       );
     }
   }
