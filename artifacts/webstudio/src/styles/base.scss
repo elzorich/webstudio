@@ -4,29 +4,29 @@
 
 // ── Brand colour palette ─────────────────────────────────────────────────────
 :root {
-  // Primary — deep teal, professional & calming
-  --color-primary:        #1a6e6e;
-  --color-primary-light:  #2a8f8f;
-  --color-primary-dark:   #134f4f;
-  --color-primary-tint:   #e8f5f5;
+  // Primary — aqua turquoise (trust + health + calm)
+  --color-primary:        #2aacac;
+  --color-primary-light:  #3dc8c8;
+  --color-primary-dark:   #1c8484;
+  --color-primary-tint:   #eaf8f8;
 
-  // Accent — warm rose, softens the clinical palette
-  --color-accent:         #c97b84;
-  --color-accent-light:   #e0a0a8;
-  --color-accent-tint:    #fdf0f1;
+  // Accent — warm sand / blush (elegance + beauty)
+  --color-accent:         #c4957a;
+  --color-accent-light:   #d8b09a;
+  --color-accent-tint:    #fdf4ef;
 
   // Neutrals
   --color-white:          #ffffff;
-  --color-bg:             #fafafa;
-  --color-bg-alt:         #f3f7f7;
+  --color-bg:             #f8fcfc;
+  --color-bg-alt:         #f0fafa;
   --color-surface:        #ffffff;
-  --color-border:         #e2e8e8;
-  --color-border-light:   #f0f4f4;
+  --color-border:         #d8eeee;
+  --color-border-light:   #ecf7f7;
 
   // Text
-  --color-text:           #1c2c2c;
-  --color-text-muted:     #5a7070;
-  --color-text-light:     #8a9f9f;
+  --color-text:           #122828;
+  --color-text-muted:     #4a6e6e;
+  --color-text-light:     #80a0a0;
 
   // Typography
   --font-heading:  'Playfair Display', Georgia, serif;
