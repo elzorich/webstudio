@@ -1,5 +1,5 @@
 // =============================================================================
-// MAIN.JS — Vanilla JavaScript for EZ Web Studio landing page
+// MAIN.JS — Vanilla JavaScript for EZ Studio landing page
 // =============================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
