@@ -16,6 +16,12 @@
     min-height: 480px;
     display: flex;
     align-items: center;
+
+    // On wide screens shift content toward the left edge
+    @media (min-width: 1280px) {
+      max-width: 1440px;
+      padding-inline-start: var(--space-12);
+    }
   }
 }
 
