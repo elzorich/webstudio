@@ -42,11 +42,13 @@
   mix-blend-mode: multiply;
   opacity: 1;
   display: block;
-  // Soft left-edge fade to erase the hard container boundary
+  // Keep image transparent over the text zone, fade in towards center
   mask-image: linear-gradient(
     to right,
     transparent 0%,
-    black 18%
+    transparent 30%,
+    rgba(0,0,0,0.5) 50%,
+    black 68%
   );
 }
 
