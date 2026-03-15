@@ -38,17 +38,15 @@
   width: 100%;
   height: calc(100% + 160px);
   object-fit: cover;
-  object-position: center 18%;
-  mix-blend-mode: screen;
-  opacity: 0.92;
+  object-position: center 30%;
+  mix-blend-mode: multiply;
+  opacity: 1;
   display: block;
-  // Fade the left edge so text on the left stays clean
+  // Soft left-edge fade to erase the hard container boundary
   mask-image: linear-gradient(
     to right,
     transparent 0%,
-    rgba(0,0,0,0.15) 12%,
-    rgba(0,0,0,0.55) 28%,
-    black 52%
+    black 18%
   );
 }
 
