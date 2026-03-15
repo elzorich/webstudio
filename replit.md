@@ -48,6 +48,21 @@ Every package extends `tsconfig.base.json` which sets `composite: true`. The roo
 - `pnpm run build` — runs `typecheck` first, then recursively runs `build` in all packages that define it
 - `pnpm run typecheck` — runs `tsc --build --emitDeclarationOnly` using project references
 
+## Artifacts
+
+### `artifacts/webstudio` (`@workspace/webstudio`)
+
+Static landing page for PixelCare Studio (web studio specialising in healthcare/wellness/beauty brands).
+
+- **Stack**: HTML + SCSS + Vanilla JS, built with Vite (no React, no framework)
+- **Entry**: `index.html` — full page with all sections
+- **Styles**: `src/styles/` — modular SCSS partials (base, layout, components, sections)
+- **JS**: `src/js/main.js` — mobile nav, smooth scroll, form validation, scroll animations
+- **Assets**: `src/assets/` — images, icons, favicon
+- **README**: `artifacts/webstudio/README.md` — full setup guide for GitHub & VS Code
+- `pnpm --filter @workspace/webstudio run dev` — dev server at assigned PORT
+- `pnpm --filter @workspace/webstudio run build` — production build to `dist/public/`
+
 ## Packages
 
 ### `artifacts/api-server` (`@workspace/api-server`)
