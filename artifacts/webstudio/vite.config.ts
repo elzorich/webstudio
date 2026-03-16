@@ -1,12 +1,10 @@
 import { defineConfig } from "vite";
-import path from "path";
 
-const rawPort = process.env.PORT;
-const port = rawPort ? Number(rawPort) : 5173;
-const basePath = process.env.BASE_PATH ?? "/";
+const port = process.env.PORT ? Number(process.env.PORT) : 5173;
+const base = process.env.BASE_PATH ?? "/";
 
 export default defineConfig({
-  base: basePath,
+  base,
   css: {
     preprocessorOptions: {
       scss: {
@@ -14,15 +12,8 @@ export default defineConfig({
       },
     },
   },
-  resolve: {
-    alias: {
-      "@": path.resolve(import.meta.dirname, "src"),
-    },
-  },
-  root: path.resolve(import.meta.dirname),
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
-    emptyOutDir: true,
+    outDir: "dist",
   },
   server: {
     port,
